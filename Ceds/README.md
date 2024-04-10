@@ -1,4 +1,4 @@
-# Desafio Target Sistemas
+# Desafio Gupy
 
 1) Observe o trecho de código abaixo:
 
@@ -22,11 +22,11 @@ imprimir(SOMA);
 ```
 Ao final do processamento, qual será o valor da variável SOMA?
 
-[Resposta da questão 1](https://github.com/ThiagoTrajanoDev/teste-target-sistemas/blob/master/out/production/Teste%20Target%20Sistemas/SomaSimples/SomaSimples.java) =  91 
+[Resposta da questão 1](https://github.com/Ceds0508/testegupy/blob/main/Ceds/SomaSimples/SomaSimples.java) =  91 
 
 
 2) Dado a sequência de Fibonacci, onde se inicia por 0 e 1 e o próximo valor sempre será a soma dos 2 valores anteriores (exemplo: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34...), escreva um programa na linguagem que desejar onde, informado um número, ele calcule a sequência de Fibonacci e retorne uma mensagem avisando se o número informado pertence ou não a sequência.
-[Resposta da Questão 2](https://github.com/ThiagoTrajanoDev/teste-target-sistemas/blob/master/out/production/Teste%20Target%20Sistemas/Fibonacci/Fibonacci.java)
+[Resposta da Questão 2](https://github.com/Ceds0508/testegupy/blob/main/Ceds/Fibonacci/Fibonacci.java)
 
 3) Descubra a lógica e complete o próximo elemento:
 
@@ -49,15 +49,34 @@ f) 2,10, 12, 16, 17, 18, 19, <strong><code>20</code></strong>
 Como você faria para descobrir, usando apenas duas idas até uma das salas das lâmpadas, qual interruptor controla cada lâmpada?
 
 ```
-Entendendo que há 3 salas cada um com uma lâmapda:
-Na primeira ida:
+Aqui está uma solução para o problema:
 
-- Ligo o interruptor  1 por 5 minutos e o desligo, ligo oo interruptor 2 e na mesma hora vou até uma das 3 salas
-- Se a lampada estiver acessa, pertence ao interruptor 2, se estiver desligada e quente pertence ao interruptor 1, se estiver desligada e fria pertence ao interruptor 3.
+1. Primeira visita:
+   - Ligue o primeiro interruptor e o deixe ligado por alguns minutos.
+   - Depois, desligue-o e ligue o segundo interruptor.
+   - Deixe o segundo interruptor ligado e visite a primeira sala.
 
-Na segunda ida:
-- Sabendo já a qual pertence um interruptor, apenas deixo um ligado e outro desligado entre o restantes
-- Vou até outra sala e descubro os outros dois.
+   Agora, temos três situações possíveis:
+
+   a) Se a lâmpada estiver acesa, então o primeiro interruptor controla essa lâmpada.
+   
+   b) Se a lâmpada estiver desligada e fria, então o segundo interruptor controla essa lâmpada.
+   
+   c) Se a lâmpada estiver desligada, mas ainda estiver quente, então o terceiro interruptor controla essa lâmpada.
+
+2. Segunda visita:
+   - Ligue o interruptor que você identificou na primeira etapa (ou seja, o interruptor que você acredita controlar a primeira lâmpada).
+   - Deixe-o ligado e visite a segunda sala.
+
+   Agora, observe a lâmpada na segunda sala:
+
+   - Se estiver acesa, o interruptor que você ligou na segunda visita controla essa lâmpada.
+   - Se estiver desligada e fria, o interruptor que você não tocou em nenhuma das visitas controla essa lâmpada.
+
+Dessa forma, com apenas duas idas até uma das salas das lâmpadas, você pode determinar qual interruptor controla cada uma das lâmpadas.
+
+
+Sim, usei chat gpt para responder essa
 ```
 
 5) Escreva um programa que inverta os caracteres de um string.
@@ -69,5 +88,5 @@ a) Essa string pode ser informada através de qualquer entrada de sua preferênc
 
 b) Evite usar funções prontas, como, por exemplo, reverse;
 
-[Resposta questão 5](https://github.com/ThiagoTrajanoDev/teste-target-sistemas/blob/master/out/production/Teste%20Target%20Sistemas/InverteString/InverteString.java)
+[Resposta questão 5](https://github.com/Ceds0508/testegupy/blob/main/Ceds/InverteString/InverteString.java)
 
